@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/cvCard"
     android:layout_height="wrap_content">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
+        android:layout_margin="15dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -13,70 +15,152 @@
             android:orientation="vertical"
             android:layout_height="wrap_content">
 
-
-
-
-            <TextView
-                android:id="@+id/question"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Q.1) How many states does india have?"
-                android:textSize="21sp"
-                android:textStyle="italic"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-                />
-            <TextView
-                android:id="@+id/optiona"
+                <TextView
+                    android:id="@+id/question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Q.1) How many states does india have?"
+                    android:textSize="21sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
 
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="a) 22"
-                android:textSize="21sp"
-                android:textStyle="italic"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-                />
-            <TextView
-                android:id="@+id/optionb"
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
 
+                    />
+
+                <TextView
+                    android:id="@+id/optionA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="25"
+                    android:textSize="21sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="b) 25"
-                android:textSize="21sp"
-                android:textStyle="italic"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-                />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
 
-            <TextView
-                android:id="@+id/optionc"
+                    />
 
+                <TextView
+                    android:id="@+id/optionB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="28"
+                    android:textSize="21sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="c) 32"
-                android:textSize="21sp"
-                android:textStyle="italic"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-                />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
 
-            <TextView
-                android:id="@+id/optiond"
+                    />
 
+                <TextView
+                    android:id="@+id/optionC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="29"
+                    android:textSize="21sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="d) 29"
-                android:textSize="21sp"
-                android:textStyle="italic"
-                android:textColor="@color/black"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
-                />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+
+                    />
+
+                <TextView
+                    android:id="@+id/optionD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="30"
+                    android:textSize="21sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ivEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="edit"/>
+
+            <Button
+                android:id="@+id/ivDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:text="delete"/>
+
+        </LinearLayout>
 
 
         </LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.masai.sainath.quizpp" >
+    package="com.masai.sainath.quizpp">
 
     <application
         android:allowBackup="true"
@@ -8,10 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Quizpp" >
+        android:theme="@style/Theme.Quizpp">
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".Views.CreateQuiz"
+            android:exported="true" />
+        <activity
+            android:name=".Views.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

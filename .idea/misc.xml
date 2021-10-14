@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.1" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/layout/activity_create_quiz.xml" value="0.1" />
         <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/layout/itemlayout.xml" value="0.16" />
+        <entry key="..\:/Users/Sai Nath Reddy/OneDrive/Desktop/PROJECTS/QuizApp/app/src/main/res/layout/itemlayout.xml" value="0.1" />
       </map>
     </option>
   </component>

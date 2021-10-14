@@ -1,61 +1,28 @@
-package com.masai.myjournalapp.adapter
+package com.masai.sainath.quizpp.Adapter
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.masai.sainath.quizpp.MainActivity
+import com.masai.sainath.quizpp.DataModel.QuizEntity
 import com.masai.sainath.quizpp.R
 
-class QuizAdapter(
-    val context: Context,
-    val quizList: MutableList<String>,
-    val listener: MainActivity
-) : RecyclerView.Adapter<QuizAdapter.RoutineViewHolder>() {
+class QuizAdapter(private val dataHolder: MutableList<QuizEntity>,val listner : OnItemClicked) : RecyclerView.Adapter<QuizViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuizViewHolder {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RoutineViewHolder {
-        val inflater = LayoutInflater.from(context)
-        val view1: View = inflater.inflate(R.layout.itemlayout, parent, false)
-        return RoutineViewHolder(view1)
+        val view  = LayoutInflater.from(parent.context).inflate(R.layout.itemlayout,parent,false)
+
+        return QuizViewHolder(view,listner)
 
     }
 
-    override fun onBindViewHolder(holder: RoutineViewHolder, position: Int) {
-        val task = quizList.get(position)
-        //holder.title.text = task.title
-        //holder.desc.text = task.desc
+    override fun onBindViewHolder(holder: QuizViewHolder, position: Int) {
+        var model = dataHolder[position]
 
-        /*holder.editTv.setOnClickListener {
-            listener.onEditClicked(task)
-        }
-
-        holder.delete.setOnClickListener {
-            listener.onDeleteClicked(task)
-        }*/
+        holder.setData(model)
 
     }
 
     override fun getItemCount(): Int {
-        return quizList.size
-    }
-
-
-    class RoutineViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-        var Q1: TextView
-        var optionA: TextView
-        var optionB: TextView
-        var optionC: TextView
-        var optionD: TextView
-
-        init {
-            Q1 = itemView.findViewById(R.id.question)
-            optionA = itemView.findViewById(R.id.optiona)
-            optionB = itemView.findViewById(R.id.optionb)
-            optionC= itemView.findViewById(R.id.optionc)
-            optionD = itemView.findViewById(R.id.optiond)
-        }
+        return dataHolder.size
     }
 }
